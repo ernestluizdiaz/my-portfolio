@@ -177,7 +177,6 @@ nav{
     margin-block: 20px;
 }
 .typedText{
-    text-transform: capitalize;
     color: var(--text-color-third);
 }
 .featured-text-info{
@@ -425,6 +424,11 @@ footer{
 .footer-social-icons{
     display: flex;
     gap: 30px;   
+}
+
+.footer-social-icons a {
+    text-decoration: none;
+    color: var(--text-color-black);
 }
 .bottom-footer{
     font-size: 14px;
