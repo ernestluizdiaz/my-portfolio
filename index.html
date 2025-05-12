@@ -60,12 +60,19 @@
 						<button class="btn" id="download-btn" onclick="downloadCV()">
 							Download CV <span class="uil uil-arrow-right"></span>
 						</button>
-						<script>
-							function downloadCV() {
-								window.open('assets/cv/my_cv.pdf', '_blank');
-							}
-						</script>
 					</div>
+					<script>
+						function downloadCV() {
+							// Create a link to your CV file
+							const link = document.createElement('a');
+							link.href = 'assets/cv/my_cv.pdf';
+							link.download = 'my_cv.pdf';
+							document.body.appendChild(link);
+							link.click();
+							document.body.removeChild(link);
+						}
+					</script>
+
 				</div>
 			</section>
 
@@ -196,6 +203,8 @@
 			</div>
 		</footer>
 	</div>
+
+
 
 	<!-- ----- TYPING JS Link ----- -->
 	<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
