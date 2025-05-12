@@ -57,18 +57,16 @@
 						</p>
 					</div>
 					<div class="featured-text-btn">
-						<button class="btn" id="download-btn">
-							<a href="https://ernestluizdiaz.github.io/Resume/" target="_blank" rel="noopener noreferrer">Visit my
-								resume <i class="uil uil-arrow-right"></i></a>
-
+						<button class="btn" id="download-btn" onclick="downloadCV()">
+							Download CV <span class="uil uil-arrow-right"></span>
 						</button>
+						<script>
+							function downloadCV() {
+								window.open('assets/cv/my_cv.pdf', '_blank');
+							}
+						</script>
 					</div>
 				</div>
-				<!-- <div class="featured-image">
-					<div class="image">
-						<img src="assets/images/me.png" alt="me" />
-					</div>
-				</div> -->
 			</section>
 
 			<!-- -------------- ABOUT BOX ---------------- -->
@@ -158,7 +156,7 @@
 						<img src="assets/images/project-3.png" alt="first-project" width="100%" height="100%" />
 						<div class="project-overlay">
 							<h3>Sneaker Street Inventory System</h3>
-							<a href="https://eac-misd.vercel.app/" target="_blank">
+							<a href="https://sneaker-street-inventory.vercel.app/" target="_blank">
 								<i class="uil uil-arrow-right"></i>
 							</a>
 						</div>
