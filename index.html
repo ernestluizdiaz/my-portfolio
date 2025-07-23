@@ -2,220 +2,415 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-	<!-- --------- UNICONS ---------- -->
-	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+  <title>Resume</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-	<!-- --------- CSS ---------- -->
-	<link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-	<!-- --------- FAVICON ---------- -->
-	<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
-	<title>Portfolio</title>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume
+  * Updated: Jan 29 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
-	<div class="container">
-		<!-- --------------- HEADER --------------- -->
-		<nav id="header">
-			<div class="nav-menu" id="myNavMenu">
-				<ul class="nav_menu_list">
-					<li class="nav_list">
-						<a href="#home" class="nav-link active-link">Home</a>
-					</li>
-					<li class="nav_list">
-						<a href="#about" class="nav-link">About</a>
-					</li>
-					<li class="nav_list">
-						<a href="#projects" class="nav-link">Projects</a>
-					</li>
-					<li class="nav_list">
-						<a href="#contact" class="nav-link">Contacts</a>
-					</li>
-				</ul>
-			</div>
-			<div class="nav-menu-btn">
-				<i class="uil uil-bars" onclick="myMenuFunction()"></i>
-			</div>
-		</nav>
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
 
-		<!-- -------------- MAIN ---------------- -->
-		<main class="wrapper">
-			<!-- -------------- FEATURED BOX ---------------- -->
-			<section class="featured-box" id="home">
-				<div class="featured-text">
-					<div class="featured-name">
-						<p>I'm <span class="typedText"></span></p>
-					</div>
-					<div class="featured-text-info">
-						<p>
-							As an aspiring web developer, I am passionate about designing visually appealing, user-friendly websites
-							that offer seamless usability and engaging features.
-						</p>
-					</div>
-					<div class="featured-text-btn">
-						<button class="btn" id="download-btn" onclick="downloadCV()">
-							Download CV <span class="uil uil-arrow-right"></span>
-						</button>
-					</div>
-					<script>
-						function downloadCV() {
-							// Create a link to your CV file
-							const link = document.createElement('a');
-							link.href = 'assets/cv/resume.pdf';
-							link.download = 'my-resume.pdf';
-							document.body.appendChild(link);
-							link.click();
-							document.body.removeChild(link);
-						}
-					</script>
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#experience" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Experience</span></a>
+        </li>
+        <li><a href="#project" class="nav-link scrollto"><i class="bi bi-images navicon"></i>
+            <span>Project</span></a>
+        </li>
+        <li><a href="#contact" class="nav-link scrollto"><i class="bi bi-envelope navicon"></i> <span>Contact</span></a>
+        </li>
 
-				</div>
-			</section>
+      </ul>
+    </nav>
 
-			<!-- -------------- ABOUT BOX ---------------- -->
-			<section class="section" id="about">
-				<div class="top-header">
-					<h1>About Me</h1>
-				</div>
-				<div class="row">
-					<div class="col">
-						<div class="about-info">
-							<h3>My introduction</h3>
-							<p>
-								I am a web developer skilled in
-								HTML, CSS, and JavaScript, with a growing
-								knowledge of modern frameworks and libraries
-								that help me create interactive and dynamic
-								features for websites.
-							</p>
-						</div>
-					</div>
-					<div class="col">
-						<div class="skills-box">
-							<div class="skills-header">
-								<h3>Frontend</h3>
-							</div>
-							<div class="skills-list">
-								<span>HTML</span>
-								<span>CSS</span>
-								<span>JavaScript</span>
-								<span>TypeScript</span>
-								<span>Bootstrap</span>
-								<span>Tailwind</span>
-								<span>Next.js</span>
-								<span>React.js</span>
+  </header>
 
-							</div>
-						</div>
-						<div class="skills-box">
-							<div class="skills-header">
-								<h3>Backend</h3>
-							</div>
-							<div class="skills-list">
-								<span>PHP</span>
-								<span>Javascript</span>
-								<span>SQL</span>
-							</div>
-						</div>
-						<div class="skills-box">
-							<div class="skills-header">
-								<h3>Database</h3>
-							</div>
-							<div class="skills-list">
-								<span>MySQL</span>
-								<span>Firebase</span>
-								<span>Supabase</span>
-								<span>PostgreSQL</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Ernest Diaz</h1>
+      <p>I'm <span class="typed fw-bold" data-typed-items="a Designer, a Developer, a Creator"></span></p>
+      <button class="cv-btn" id="download-btn">
+        <span>
+          Download CV <i class="bi bi-arrow-right"></i>
+        </span>
+      </button>
+    </div>
+  </section><!-- End Hero -->
 
-			<!-- -------------- PROJECT BOX ---------------- -->
+  <main id="main">
 
-			<section class="section" id="projects">
-				<div class="top-header">
-					<h1>Projects</h1>
-				</div>
-				<div class="project-container">
-					<div class="project-box">
-						<img src="assets/images/project-1.png" alt="first-project" width="100%" height="100%" />
-						<div class="project-overlay">
-							<h3>Elo Tag</h3>
-							<a href="https://elo-store.vercel.app/" target="_blank">
-								<i class="uil uil-arrow-right"></i>
-							</a>
-						</div>
-					</div>
-					<div class="project-box">
-						<img src="assets/images/project-2.png" alt="first-project" width="100%" height="100%" />
-						<div class="project-overlay">
-							<h3>MISDesk</h3>
-							<a href="https://eac-misd.vercel.app/" target="_blank">
-								<i class="uil uil-arrow-right"></i>
-							</a>
-						</div>
-					</div>
-					<div class="project-box">
-						<img src="assets/images/project-3.png" alt="first-project" width="100%" height="100%" />
-						<div class="project-overlay">
-							<h3>Sneaker Street Inventory System</h3>
-							<a href="https://sneaker-street-inventory.vercel.app/" target="_blank">
-								<i class="uil uil-arrow-right"></i>
-							</a>
-						</div>
-					</div>
-					<div class="project-box">
-						<i class="uil uil-award"></i>
-						<h3>Experience</h3>
-						<label>1 Year in the field</label>
-					</div>
-				</div>
-			</section>
-		</main>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
 
-		<!-- --------------- FOOTER --------------- -->
-		<footer id="contact">
-			<div class="top-footer">
-				<p>Contact Me</p>
-			</div>
+        <div class="section-title">
+          <h2>About</h2>
+          <p>
+            As an aspiring web developer, I am passionate about designing visually appealing, user-friendly websites
+            that offer seamless usability and engaging features.</p>
+        </div>
 
-			<div class="footer-social-icons">
-				<a href="https://www.instagram.com/crossxsin/" target="_blank" class="icon" aria-label="Instagram">
-					<i class="uil uil-instagram"></i>
-				</a>
-				<a href="https://www.linkedin.com/in/ernest-luiz-diaz-0959081a9/" target="_blank" class="icon"
-					aria-label="LinkedIn">
-					<i class="uil uil-linkedin-alt"></i>
-				</a>
-				<a href="https://www.facebook.com/ernestluizdiaz/" target="_blank" class="icon" aria-label="Facebook">
-					<i class="uil uil-facebook"></i>
-				</a>
-				<a href="https://github.com/ernestluizdiaz" target="_blank" class="icon" aria-label="GitHub">
-					<i class="uil uil-github-alt"></i>
-				</a>
-			</div>
-			<div class="bottom-footer">
-				<p>&copy; Ernest Diaz 2025</p>
-			</div>
-		</footer>
-	</div>
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>Technical Skills</h3>
+            <div class="row"></div>
+            <p>" I am a web developer skilled in HTML, CSS, and JavaScript, with a growing knowledge of modern
+              frameworks and libraries that help me create interactive and dynamic features for websites."</p>
+
+            <div class="skills-grid">
+              <div class="skill-category">
+                <div class="skill-circle frontend-circle">
+                  Frontend
+                </div>
+                <ul class="skill-list">
+                  <li class="skill-item frontend-hover">HTML</li>
+                  <li class="skill-item frontend-hover">CSS</li>
+                  <li class="skill-item frontend-hover">JavaScript</li>
+                  <li class="skill-item frontend-hover">React</li>
+                </ul>
+              </div>
+
+              <div class="skill-category">
+                <div class="skill-circle backend-circle">
+                  Backend
+                </div>
+                <ul class="skill-list">
+                  <li class="skill-item backend-hover">Node.js</li>
+                  <li class="skill-item backend-hover">PHP</li>
+                  <li class="skill-item backend-hover">SQL</li>
+                </ul>
+              </div>
+
+              <div class="skill-category">
+                <div class="skill-circle sql-circle">
+                  Database
+                </div>
+                <ul class="skill-list">
+                  <li class="skill-item sql-hover">MySQL</li>
+                  <li class="skill-item sql-hover">PostgreSQL</li>
+                  <li class="skill-item sql-hover">Firebase</li>
+                  <li class="skill-item sql-hover">Supabase</li>
+                </ul>
+              </div>
+
+              <div class="skill-category">
+                <div class="skill-circle framework-circle">
+                  Framework
+                </div>
+                <ul class="skill-list">
+                  <li class="skill-item framework-hover">Laravel</li>
+                  <li class="skill-item framework-hover">Next.js</li>
+                  <li class="skill-item framework-hover">Tailwind</li>
+                  <li class="skill-item framework-hover">Bootstrap</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="experience" class="experience">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Experience</h2>
+          <p>Seeking an entry-level position as a web developer where I can apply my foundational knowledge in HTML,
+            CSS, and JavaScript. Eager to contribute to dynamic projects, learn from experienced professionals, and
+            expand my skills in front-end and back-end development.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="experience-title">Software</h3>
+            <div class="experience-item pb-0">
+              <h4>TOOLS</h4>
+              <ul>
+                <li>SQL</li>
+                <li>GIT</li>
+                <li>Coding</li>
+                <li>VS Code</li>
+                <li>Microsoft Office</li>
+              </ul>
+            </div>
+
+            <h3 class="experience-title">Education</h3>
+            <div class="experience-item">
+              <h4>SENIOR HIGHSCHOOL</h4>
+              <h5>2017 - 2020</h5>
+              <p><em>National College of Science and Technology - Institute of Industrial Research and Training</em></p>
+            </div>
+            <div class="experience-item">
+              <h4>TERTIARY</h4>
+              <h5>2021 - 2025</h5>
+              <p><em>Emilio Aguinaldo College, Cavite</em><br><i>"Graduated with a Bachelor of Science in Computer
+                  Science"</i></p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="experience-title">Achievements</h3>
+            <div class="experience-item" style="padding: 0px 20px;">
+              <h4>Junior High School</h4>
+              <h5>2013 - 2017</h5>
+              <p><em>FRANCISCO E. BARZAGA INTEGRATED HIGH SCHOOL</em></p>
+              <ul>
+                <li>Graduated with Best CSS Award</li>
+                <li>Top 6 in Web Designing Competition</li>
+                <li>3rd place in Advance Computer System Servicing Troubleshooting</li>
+                <li>2nd place in Basic Computer System Servicing Troubleshooting</li>
+              </ul>
+            </div>
+
+            <h3 class="experience-title">Work Experience</h3>
+            <div class="experience-item">
+              <h4>On-the-Job Training</h4>
+              <h5>June - July 2025</h5>
+              <p><em>KBLINK.PH (Web Developer)</em></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <section id="project" class="project">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>project</h2>
+          <p>Seeking an entry-level position as a web developer where I can apply my foundational knowledge in HTML,
+            CSS, and JavaScript. Eager to contribute to dynamic projects, learn from experienced professionals, and
+            expand my skills in front-end and back-end development.</p>
+        </div>
+
+        <div class="row">
+          <div class="projcet-container">
+            <!-- Elo Tag -->
+            <div class=" project-item">
+              <div class="project-img">
+                <img src="/assets/img/elo-tag.png" alt="elo-tag">
+              </div>
+              <div class="project-about">
+                <h3>Elo Tag</h3>
+                <p><strong>Type:</strong> E-Commerce</p>
+                <p class="project-details">"Elo Tag is an e-commerce shop that offers an innovative alternative to
+                  traditional calling
+                  cards—people can contact you using the Elo Card, which leverages NFC technology."</p>
+
+                <div class="tech-stack">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">Firebase</span>
+                  <span class="tech-tag">Tailwind</span>
+                </div>
+
+                <div class="card-actions">
+                  <a href="https://elo-store.vercel.app/" class="btn btn-primary" target="_blank"><span>Visit</span></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sneaker Street -->
+            <div class=" project-item">
+              <div class="project-img">
+                <img src="/assets/img/sneaker-street.png" alt="sneaker-street">
+              </div>
+              <div class="project-about">
+                <h3>Sneaker Street Inventory</h3>
+                <p><strong>Type:</strong> Inventory System</p>
+                <p class="project-details">"A retail shop specializing in branded shoes such as Nike,
+                  Adidas, Puma, and more. An inventory system to manage and track incoming and outgoing products, as
+                  well as monitor total income and profit."</p>
+
+                <div class="tech-stack">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">Supabase</span>
+                  <span class="tech-tag">Tailwind</span>
+                </div>
+
+                <div class="card-actions">
+                  <a href="https://sneaker-street-inventory.vercel.app/" class="btn btn-primary"
+                    target="_blank"><span>Visit</span></a>
+                </div>
+              </div>
+            </div>
+
+            <div class=" project-item">
+              <div class="project-img">
+                <img src="/assets/img/eac-misd.png" alt="eac-misd">
+              </div>
+              <div class="project-about">
+                <h3>EAC MISD</h3>
+                <p><strong>Type:</strong> Ticketing System</p>
+                <p class="project-details">"It is a ticketing system where students of Emilio Aguinaldo College Cavite
+                  can directly submit tickets to the IT staff. The system is enhanced with Gemini AI, which provides
+                  instant responses to help resolve common technical issues."</p>
+
+                <div class="tech-stack">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">Firebase</span>
+                  <span class="tech-tag">Tailwind</span>
+                  <span class="tech-tag">Gemini AI</span>
+                </div>
+
+                <div class="card-actions">
+                  <a href="https://eac-misd.vercel.app/" class="btn btn-primary" target="_blank"><span>Visit</span></a>
+                </div>
+              </div>
+            </div>
+
+            <div class=" project-item">
+              <div class="project-img">
+                <img src="/assets/img/ninjabazaar.png" alt="ninja-bazaar">
+              </div>
+              <div class="project-about">
+                <h3>Ninja Bazaar</h3>
+                <p><strong>Type:</strong> E-Commerce</p>
+                <p class="project-details">
+                  "Ninja Bazaar is an international e-commerce platform centralized for Indian sellers, offering great
+                  deals on a wide range of products. It empowers local businesses to reach global customers with secure
+                  payments and fast shipping."
+                </p>
+
+                <div class="tech-stack">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">Supabase</span>
+                  <span class="tech-tag">Axios</span>
+                  <span class="tech-tag">Tailwind</span>
+                </div>
+
+                <div class="card-actions">
+                  <a href="#" class="btn btn-primary" target="_blank"><span>Visit</span></a>
+                </div>
+              </div>
+            </div>
+
+            <div class=" project-item">
+              <div class="project-img">
+                <img src="/assets/img/neutein.png" alt="neutein">
+              </div>
+              <div class="project-about">
+                <h3>Neutein</h3>
+                <p><strong>Type:</strong> Landing Page</p>
+                <p class="project-details">
+                  "Neutein is a landing page dedicated to promoting a powerful memory-support supplement, offering a
+                  wide range of benefits to enhance focus, cognitive function, mental clarity, alertness, retention, and
+                  productivity.."
+                </p>
+
+                <div class="tech-stack">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">Supabase</span>
+                  <span class="tech-tag">Axios</span>
+                  <span class="tech-tag">Tailwind</span>
+                </div>
+
+                <div class="card-actions">
+                  <a href="#" class="btn btn-primary" target="_blank"><span>Visit</span></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+    </section>
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+        <h3>Contact Me</h3>
+        <div class="contact-info">
+          <p>Email: <span>ernestluizdiaz@gmail.com</span></p>
+          <p>Phone Number: <span>+639164604780</span></p>
+        </div>
+        <div class="social-icons">
+          <div class="social-items">
+            <a href="https://www.facebook.com/ernestluizdiaz/" target="_blank" rel="noopener">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+          <div class="social-items">
+            <a href="https://github.com/ernestluizdiaz" target="_blank" rel="noopener">
+              <i class="bi bi-github"></i>
+            </a>
+          </div>
+          <div class="social-items">
+            <a href="https://www.linkedin.com/in/ernest-luiz-diaz-0959081a9/" target="_blank" rel="noopener">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
 
 
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
-	<!-- ----- TYPING JS Link ----- -->
-	<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
-	<!-- ----- SCROLL REVEAL JS Link----- -->
-	<script src="https://unpkg.com/scrollreveal"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
-	<!-- ----- MAIN JS ----- -->
-	<script src="assets/js/main.js"></script>
 </body>
 
 </html>
