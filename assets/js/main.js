@@ -40,7 +40,7 @@
 
 	const downloadCV = () => {
 		const link = document.createElement("a");
-		link.href = "/assets/cv/resume.pdf";
+		link.href = "assets/cv/resume.pdf";
 		link.download = "Diaz,Ernest-Resume.pdf";
 		document.body.appendChild(link);
 		link.click();
