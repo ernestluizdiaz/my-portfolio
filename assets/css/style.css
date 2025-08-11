@@ -940,7 +940,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 715px;
+  min-height: 86vh;
 }
 
 footer h3 {
