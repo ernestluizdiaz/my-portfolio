@@ -931,6 +931,12 @@ section {
 	margin: 40px auto;
 }
 
+@media (max-width: 600px) {
+	.certificates {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
 .certificates a:hover {
 	color: #fff;
 }
