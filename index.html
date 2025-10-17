@@ -2,293 +2,392 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Ernest | Portfolio </title>
   <meta property="og:title" content="Ernest Diaz - Web Developer">
   <meta property="og:description"
-    content="Portfolio of Ernest Diaz, Web Developer skilled in React, Laravel, Next.js, and full-stack web development.">
+    content="Portfolio of Ernest Diaz, Web Developer skilled in React, Next.js, and full-stack web development.">
   <meta property="og:image" content="https://ernestdiaz.site/assets/img/fav-icon.png">
   <meta property="og:url" content="https://ernestdiaz.site">
   <meta property="og:type" content="website">
-
-
-  <title>Ernest | Portfolio </title>
-  <link rel="icon" type="image/x-icon" href="assets/img/fav-icon.png">
-
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: MyResume
-  * Updated: Jan 29 2024 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="./assets/img/fav-icon.png" />
 </head>
 
 <body>
-  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
-
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#experience" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Experience</span></a>
-        </li>
-        <li><a href="#project" class="nav-link scrollto"><i class="bi bi-images navicon"></i>
-            <span>Project</span></a>
-        </li>
-        <li><a href="#certificates" class="nav-link scrollto"><i class="bi bi-award"></i>
-            <span>Certificates</span></a>
-        </li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bi bi-envelope navicon"></i> <span>Contact</span></a>
-        </li>
-
-      </ul>
-    </nav>
-
-  </header>
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Ernest Diaz</h1>
-      <p>I'm <span class="typed fw-bold" data-typed-items="a Designer, a Developer, a Creator"></span></p>
-      <button class="cv-btn" id="download-btn">
-        <span>
-          Download CV <i class="bi bi-arrow-right"></i>
-        </span>
-      </button>
+  <header class="header">
+    <div class="header__content">
+      <div class="header__main">
+        <ul class="header__links">
+          <li class="header__link-wrapper">
+            <a href="./index.html" class="header__link"> Home </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#about" class="header__link">About </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#projects" class="header__link">
+              Projects
+            </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#contact" class="header__link"> Contact </a>
+          </li>
+        </ul>
+        <div class="header__main-ham-menu-cont">
+          <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
+          <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
+            class="header__main-ham-menu-close d-none" />
+        </div>
+      </div>
     </div>
-  </section><!-- End Hero -->
+    <div class="header__sm-menu">
+      <div class="header__sm-menu-content">
+        <ul class="header__sm-menu-links">
+          <li class="header__sm-menu-link">
+            <a href="./index.html"> Home </a>
+          </li>
 
-  <main id="main">
+          <li class="header__sm-menu-link">
+            <a href="./index.html#about"> About </a>
+          </li>
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
+          <li class="header__sm-menu-link">
+            <a href="./index.html#projects"> Projects </a>
+          </li>
 
-        <div class="section-title">
-          <h2>About</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          <li class="header__sm-menu-link">
+            <a href="./index.html#contact"> Contact </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="home-hero">
+    <div class="home-hero__content">
+      <h1 class="heading-primary">Hi, I'm Ernest</h1>
+      <div class="home-hero__info">
+        <p class="text-primary">
+          I’m a full stack developer passionate about building scalable, user-friendly web applications from front-end
+          to back-end.
+        </p>
+      </div>
+      <div class="home-hero__cta">
+        <a href="./#projects" class="btn btn--bg">Projects</a>
+      </div>
+    </div>
+    <!-- <div class="home-hero__socials">
+      <div class="home-hero__social">
+        <a href="#" class="home-hero__social-icon-link">
+          <img src="./assets/png/linkedin-ico.png" alt="icon" class="home-hero__social-icon" />
+        </a>
+      </div>
+      <div class="home-hero__social">
+        <a href="#" class="home-hero__social-icon-link">
+          <img src="./assets/png/github-ico.png" alt="icon" class="home-hero__social-icon" />
+        </a>
+      </div>
+      <div class="home-hero__social">
+        <a href="#" class="home-hero__social-icon-link">
+          <img src="./assets/png/twitter-ico.png" alt="icon" class="home-hero__social-icon" />
+        </a>
+      </div>
+      <div class="home-hero__social">
+        <a href="#" class="home-hero__social-icon-link">
+          <img src="./assets/png/yt-ico.png" alt="icon" class="home-hero__social-icon" />
+        </a>
+      </div>
+      <div class="home-hero__social">
+        <a href="#" class="home-hero__social-icon-link home-hero__social-icon-link--bd-none">
+          <img src="./assets/png/insta-ico.png" alt="icon" class="home-hero__social-icon" />
+        </a>
+      </div>
+    </div> -->
+    <div class="home-hero__mouse-scroll-cont">
+      <div class="mouse"></div>
+    </div>
+  </section>
+  <section id="about" class="about sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main">About Me</span>
+        <span class="heading-sec__sub">
+          A passionate full stack developer dedicated to creating innovative, efficient, and user-focused web
+          applications.
+        </span>
+      </h2>
+      <div class="about__content">
+        <div class="about__content-main">
+          <h3 class="about__content-title">Get to know me!</h3>
+          <div class="about__content-details">
+            <p class="about__content-details-para">
+              Hey! I'm <strong>Ernest</strong>, a <strong>Full Stack Developer</strong> passionate about building
+              scalable and user-friendly web applications. I’ve worked on <strong>front-end</strong> and
+              <strong>back-end</strong> projects, collaborated with teams, and developed
+              <strong>digital solutions</strong> that help businesses and users achieve their goals.
+            </p>
+            <p class="about__content-details-para">
+              I love exploring new technologies and turning ideas into functional, impactful products.
+              Let’s connect and <strong>build something amazing</strong> together!
+            </p>
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Technical Skills</h3>
-            <div class="row"></div>
-            <p>" I am a web developer skilled in HTML, CSS, and JavaScript, with a growing knowledge of modern
-              frameworks and libraries that help me create interactive and dynamic features for websites."</p>
 
-            <div class="skills-grid">
-              <div class="skill-category">
-                <div class="skill-circle frontend-circle">
-                  Frontend
-                </div>
-                <ul class="skill-list">
-                  <li class="skill-item frontend-hover">HTML</li>
-                  <li class="skill-item frontend-hover">CSS</li>
-                  <li class="skill-item frontend-hover">JavaScript</li>
-                  <li class="skill-item frontend-hover">React</li>
-                </ul>
-              </div>
+        </div>
+        <div class="about__content-skills">
+          <h3 class="about__content-title">My Skills</h3>
 
-              <div class="skill-category">
-                <div class="skill-circle backend-circle">
-                  Backend
-                </div>
-                <ul class="skill-list">
-                  <li class="skill-item backend-hover">Node.js</li>
-                  <li class="skill-item backend-hover">PHP</li>
-                  <li class="skill-item backend-hover">SQL</li>
-                </ul>
-              </div>
+          <!-- Frontend -->
+          <h4 class="skills__category">Frontend</h4>
+          <div class="skills">
+            <div class="skills__skill">HTML</div>
+            <div class="skills__skill">CSS</div>
+            <div class="skills__skill">JavaScript</div>
+            <div class="skills__skill">React</div>
+          </div>
 
-              <div class="skill-category">
-                <div class="skill-circle sql-circle">
-                  Database
-                </div>
-                <ul class="skill-list">
-                  <li class="skill-item sql-hover">MySQL</li>
-                  <li class="skill-item sql-hover">PostgreSQL</li>
-                  <li class="skill-item sql-hover">Firebase</li>
-                  <li class="skill-item sql-hover">Supabase</li>
-                </ul>
-              </div>
+          <!-- Backend -->
+          <h4 class="skills__category">Backend</h4>
+          <div class="skills">
+            <div class="skills__skill">Node.js</div>
+            <div class="skills__skill">PHP</div>
+            <div class="skills__skill">MySQL</div>
+            <div class="skills__skill">API Integration</div>
+          </div>
 
-              <div class="skill-category">
-                <div class="skill-circle framework-circle">
-                  Framework
-                </div>
-                <ul class="skill-list">
-                  <li class="skill-item framework-hover">Laravel</li>
-                  <li class="skill-item framework-hover">Next.js</li>
-                  <li class="skill-item framework-hover">Tailwind</li>
-                  <li class="skill-item framework-hover">Bootstrap</li>
-                </ul>
-              </div>
-            </div>
+          <h4 class="skills__category">Frameworks</h4>
+          <div class="skills">
+            <div class="skills__skill">Next.js</div>
+            <div class="skills__skill">Tailwind</div>
+            <div class="skills__skill">Bootstrap</div>
+          </div>
+
+          <!-- CMS / Platforms -->
+          <h4 class="skills__category">CMS / Platforms</h4>
+          <div class="skills">
+            <div class="skills__skill">WordPress (Elementor)</div>
+          </div>
+
+          <!-- Tools -->
+          <h4 class="skills__category">Tools</h4>
+          <div class="skills">
+            <div class="skills__skill">Git</div>
+            <div class="skills__skill">VS Code</div>
+            <div class="skills__skill">Figma</div>
           </div>
         </div>
 
       </div>
+    </div>
+  </section>
+  <section id="projects" class="projects sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-bg">
+        <span class="heading-sec__main">Projects</span>
+        <span class="heading-sec__sub">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+          tempora explicabo quae quod deserunt eius sapiente
+        </span>
+      </h2>
 
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="experience" class="experience">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Experience</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="experience-title">Software</h3>
-            <div class="experience-item pb-0">
-              <h4>TOOLS</h4>
-              <ul>
-                <li>SQL</li>
-                <li>GIT</li>
-                <li>Coding</li>
-                <li>VS Code</li>
-                <li>Microsoft Office</li>
-              </ul>
-            </div>
-
-            <h3 class="experience-title">Education</h3>
-            <div class="experience-item">
-              <h4>SENIOR HIGHSCHOOL</h4>
-              <h5>2017 - 2020</h5>
-              <p><em>National College of Science and Technology - Institute of Industrial Research and Training</em></p>
-            </div>
-            <div class="experience-item">
-              <h4>TERTIARY</h4>
-              <h5>2021 - 2025</h5>
-              <p><em>Emilio Aguinaldo College, Cavite</em><br><i>"Graduated with a Bachelor of Science in Computer
-                  Science"</i></p>
-            </div>
+      <div class="projects__content">
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/projects/elo-tag.png" alt="Software Screenshot" class="projects__row-img"
+              loading="lazy" />
           </div>
-          <div class="col-lg-6">
-            <h3 class="experience-title">Achievements</h3>
-            <div class="experience-item" style="padding: 0px 20px;">
-              <h4>Junior High School</h4>
-              <h5>2013 - 2017</h5>
-              <p><em>FRANCISCO E. BARZAGA INTEGRATED HIGH SCHOOL</em></p>
-              <ul>
-                <li>Graduated with Best CSS Award</li>
-                <li>Top 6 in Web Designing Competition</li>
-                <li>3rd place in Advance Computer System Servicing Troubleshooting</li>
-                <li>2nd place in Basic Computer System Servicing Troubleshooting</li>
-              </ul>
-            </div>
-
-            <h3 class="experience-title">Work Experience</h3>
-            <div class="experience-item">
-              <h4>On-the-Job Training</h4>
-              <h5>June - July 2025</h5>
-              <p><em>KBLINK.PH (Web Developer)</em></p>
-            </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Elo Tag</h3>
+            <p class="projects__row-content-desc">
+              Elo Tag is an e-commerce shop that offers an innovative alternative to traditional calling cards—people
+              can contact you using the Elo Card, which leverages NFC technology.
+            </p>
+            <a href="./project-1.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Case Study</a>
           </div>
         </div>
-
-      </div>
-    </section><!-- End Resume Section -->
-
-    <section id="project" class="project">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>project</h2>
-        </div>
-
-        <div class="row">
-          <div class="projcet-container" id="project-container"></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="certificates">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Certificates</h2>
-
-          <div class="row">
-            <div class="certificates" id="certificate-container"></div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/projects/sneaker-street.png" alt="Software Screenshot" class="projects__row-img"
+              loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Sneaker Street Inventory 2</h3>
+            <p class="projects__row-content-desc">
+              A retail shop specializing in branded shoes such as Nike, Adidas, Puma, and more. An inventory system to
+              manage and track incoming and outgoing products, as well as monitor total income and profit.
+            </p>
+            <a href="./project-2.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Case Study</a>
           </div>
         </div>
-    </section>
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-        <h3>Contact Me</h3>
-        <div class="contact-info">
-          <p>Email: <span>ernestluizdiaz@gmail.com</span></p>
-          <p>Phone Number: <span>+639164604780</span></p>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/projects/eac-misd.png" alt="Software Screenshot" class="projects__row-img"
+              loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">EAC MISD</h3>
+            <p class="projects__row-content-desc">
+              It is a ticketing system where students of Emilio Aguinaldo College Cavite can directly submit tickets to
+              the IT staff. The system is enhanced with Gemini AI, which provides instant responses to help resolve
+              common technical issues.
+            </p>
+            <a href="./project-3.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Case Study</a>
+          </div>
         </div>
-        <div class="social-icons">
-          <div class="social-items">
-            <a href="https://www.facebook.com/ernestluizdiaz/" target="_blank" rel="noopener">
-              <i class="bi bi-facebook"></i>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/projects/ninjabazaar.png" alt="Software Screenshot" class="projects__row-img"
+              loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Ninja Bazaar</h3>
+            <p class="projects__row-content-desc">
+              Ninja Bazaar is an international e-commerce platform centralized for Indian sellers, offering great deals
+              on a wide range of products. It empowers local businesses to reach global customers with secure payments
+              and fast shipping.
+            </p>
+            <a href="./project-4.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Case Study</a>
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/projects/neutein.png" alt="Software Screenshot" class="projects__row-img"
+              loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Neutein</h3>
+            <p class="projects__row-content-desc">
+              Neutein is a landing page dedicated to promoting a powerful memory-support supplement, offering a wide
+              range of benefits to enhance focus, cognitive function, mental clarity, alertness, retention, and
+              productivity.
+            </p>
+            <a href="./project-5.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Case Study</a>
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/projects/marci.png" alt="Software Screenshot" class="projects__row-img" loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Real Estate</h3>
+            <p class="projects__row-content-desc">
+              Marci Metzger is a dedicated real estate professional with years of experience serving the Pahrump
+              community. Her approachable nature and strong negotiation skills have helped to achieve their real estate
+              goals in Pahrump and the surrounding areas.nce focus, cognitive function, mental clarity, alertness,
+              retention, and
+              productivity.
+            </p>
+            <a href="./project-6.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Case Study</a>
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/projects/wickedsquiddivers.png" alt="Software Screenshot" class="projects__row-img"
+              loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Wicked Squid Divers</h3>
+            <p class="projects__row-content-desc">
+              Wicked Squid Divers is dedicated to sharing a passion for the ocean through unforgettable scuba diving
+              experiences. With a focus on professionalism, safety, and fun, we provide divers with the opportunity to
+              explore the underwater world and immerse themselves in a stunning, otherworldly environment.
+            </p>
+            <a href="./project-7.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Case Study</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact sec-pad dynamicBg">
+    <div class="main-container contact__container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main heading-sec__main--lt">Let's Connect</span>
+        <span class="heading-sec__sub heading-sec__sub--lt">
+          Ready to collaborate or have a project in mind? Let's make something amazing together.
+        </span>
+      </h2>
+
+      <div class="contact__content">
+        <div class="contact__buttons">
+          <div class="contact-btn-wrapper">
+            <a href="mailto:ernestluizdiaz@gmail.com" class="contact__btn contact__btn--primary" id="copyEmailBtn">
+              <i class="fas fa-envelope"></i> Get in Touch
+            </a>
+            <div class="copy-message" id="copyMessage">Email copied to clipboard!</div>
+          </div>
+          <a href="./assets/cv/resume.pdf" download="Ernest_Resume.pdf" class="contact__btn contact__btn--secondary">
+            <i class="fas fa-file-alt"></i> Download Resume
+          </a>
+        </div>
+
+        <div class="contact__socials">
+          <a href="https://github.com/ernestluizdiaz" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ernestluizdiaz/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+
+        <div class="contact__location">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Philippines</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="contact" class="main-footer">
+    <div class="main-container">
+      <div class="main-footer__upper">
+        <div class="main-footer__row main-footer__row-1">
+          <h2 class="heading heading-sm main-footer__heading-sm">
+            <span>Social</span>
+          </h2>
+          <div class="main-footer__social-cont">
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ernestluizdiaz">
+              <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/ernestluizdiaz">
+              <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />
+            </a>
+
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/crossxsin/">
+              <img class="main-footer__icon main-footer__icon--mr-none" src="./assets/png/insta-ico.png" alt="icon" />
             </a>
           </div>
-          <div class="social-items">
-            <a href="https://github.com/ernestluizdiaz" target="_blank" rel="noopener">
-              <i class="bi bi-github"></i>
-            </a>
-          </div>
-          <div class="social-items">
-            <a href="https://www.linkedin.com/in/ernest-luiz-diaz-0959081a9/" target="_blank" rel="noopener">
-              <i class="bi bi-linkedin"></i>
-            </a>
-          </div>
+        </div>
+        <div class="main-footer__row main-footer__row-2">
+          <h4 class="heading heading-sm text-lt">ERNEST DIAZ</h4>
+          <p class="main-footer__short-desc">
+            A passionate Full Stack Developer dedicated to building modern, efficient, and user-focused web
+            applications.
+          </p>
         </div>
       </div>
-    </section>
+    </div>
   </footer>
 
+  <script src="./index.js"></script>
+  <script>
+    const copyEmailBtn = document.getElementById('copyEmailBtn');
+    const copyMessage = document.getElementById('copyMessage');
+    const email = 'ernestluizdiaz@gmail.com';
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/project.js"></script>
-  <script src="assets/js/certificates.js"></script>
-
+    copyEmailBtn.addEventListener('click', (e) => {
+      // Copy email to clipboard
+      navigator.clipboard.writeText(email).then(() => {
+        copyMessage.classList.add('show');
+        setTimeout(() => copyMessage.classList.remove('show'), 2000);
+      });
+      // Also open mail client
+      window.location.href = `mailto:${email}`;
+    });
+  </script>
 
 </body>
 

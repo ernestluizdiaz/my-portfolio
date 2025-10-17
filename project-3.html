@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Ernest | Project 3 </title>
+  <meta property="og:title" content="Ernest Diaz - Web Developer">
+  <meta property="og:description"
+    content="Portfolio of Ernest Diaz, Web Developer skilled in React, Next.js, and full-stack web development.">
+  <meta property="og:image" content="https://ernestdiaz.site/assets/img/fav-icon.png">
+  <meta property="og:url" content="https://ernestdiaz.site">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="./assets/img/fav-icon.png" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__content">
+      <div class="header__main">
+        <ul class="header__links">
+          <li class="header__link-wrapper">
+            <a href="./index.html" class="header__link"> Home </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#about" class="header__link">About </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#projects" class="header__link">
+              Projects
+            </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#contact" class="header__link"> Contact </a>
+          </li>
+        </ul>
+        <div class="header__main-ham-menu-cont">
+          <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
+          <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
+            class="header__main-ham-menu-close d-none" />
+        </div>
+      </div>
+    </div>
+    <div class="header__sm-menu">
+      <div class="header__sm-menu-content">
+        <ul class="header__sm-menu-links">
+          <li class="header__sm-menu-link">
+            <a href="./index.html"> Home </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#about"> About </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#projects"> Projects </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#contact"> Contact </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="project-cs-hero">
+    <div class="project-cs-hero__content">
+      <h1 class="heading-primary">EAC MISD</h1>
+      <div class="project-cs-hero__info">
+        <p class="text-primary">
+          It is a ticketing system where students of Emilio Aguinaldo College Cavite can directly submit tickets to the
+          IT staff. The system is enhanced with Gemini AI, which provides instant responses to help resolve common
+          technical issues.
+        </p>
+      </div>
+      <div class="project-cs-hero__cta">
+        <a href="https://eac-misd.vercel.app/" class="btn btn--bg" target="_blank">Live Link</a>
+      </div>
+    </div>
+  </section>
+  <section class="project-details">
+    <div class="main-container">
+      <div class="project-details__content">
+        <div class="project-details__showcase-img-cont">
+          <img src="./assets/projects/eac-misd.png" alt="Project Image" class="project-details__showcase-img" />
+        </div>
+        <div class="project-details__content-main">
+          <div class="project-details__desc">
+            <h3 class="project-details__content-title">Project Overview</h3>
+            <p class="project-details__desc-para">
+              This project is a ticketing system designed for students of Emilio Aguinaldo College Cavite to directly
+              submit IT-related requests and issues to the college’s IT staff. It streamlines communication by allowing
+              students to report problems efficiently, track the status of their tickets, and receive timely support.
+            </p>
+            <p class="project-details__desc-para">
+              The system is enhanced with Gemini AI, which provides instant responses to common technical issues,
+              helping students resolve problems quickly without waiting for staff intervention. This AI integration
+              reduces response time and improves overall support efficiency.
+            </p>
+            <p class="project-details__desc-para">
+              Additionally, the platform allows IT staff to manage tickets, prioritize urgent requests, and maintain a
+              record of recurring issues for better resource planning. Overall, this project enhances student support,
+              automates routine tasks, and ensures faster resolution of technical problems.
+            </p>
+
+          </div>
+          <div class="project-details__tools-used">
+            <h3 class="project-details__content-title">Tools Used</h3>
+            <div class="skills">
+              <div class="skills__skill">React</div>
+              <div class="skills__skill">NextJS</div>
+              <div class="skills__skill">Supabase</div>
+              <div class="skills__skill">Gemini AI</div>
+              <div class="skills__skill">Tailwind</div>
+            </div>
+          </div>
+          <div class="project-details__links">
+            <h3 class="project-details__content-title">See Live</h3>
+            <a href="https://eac-misd.vercel.app/" class="btn btn--med btn--theme project-details__links-btn"
+              target="_blank">Live Link</a>
+            <a href="https://github.com/ernestluizdiaz/eac-misd"
+              class="btn btn--med btn--theme-inv project-details__links-btn" target="_blank">Code Link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="contact" class="main-footer">
+    <div class="main-container">
+      <div class="main-footer__upper">
+        <div class="main-footer__row main-footer__row-1">
+          <h2 class="heading heading-sm main-footer__heading-sm">
+            <span>Social</span>
+          </h2>
+          <div class="main-footer__social-cont">
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ernestluizdiaz">
+              <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/ernestluizdiaz">
+              <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />
+            </a>
+
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/crossxsin/">
+              <img class="main-footer__icon main-footer__icon--mr-none" src="./assets/png/insta-ico.png" alt="icon" />
+            </a>
+          </div>
+        </div>
+        <div class="main-footer__row main-footer__row-2">
+          <h4 class="heading heading-sm text-lt">ERNEST DIAZ</h4>
+          <p class="main-footer__short-desc">
+            A passionate Full Stack Developer dedicated to building modern, efficient, and user-focused web
+            applications.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+
+</html>
